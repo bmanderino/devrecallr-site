@@ -18,17 +18,18 @@ const WIN_SVG = `<svg class="btn-os-icon" viewBox="0 0 24 24" fill="currentColor
   <path d="M3 12V6.75l6-1.32v6.57H3zm17 0V3l-9 1.68V12h9zM3 13h6v6.57l-6-1.32V13zm17 0h-9v7.32L20 22V13z"/>
 </svg>`;
 
+const DMG_URL = "https://github.com/bmanderino/DevRecallr/releases/download/v0.2.9/DevRecallr-0.2.9-universal.dmg"
+const EXE_URL = "https://github.com/bmanderino/DevRecallr/releases/download/v0.2.9/DevRecallr.Setup.0.2.9.exe"
+
 // Build HTML for each download zone
 function buildNavButton(os) {
   if (os === 'mac') {
-    return `<a href="#" class="btn btn-primary btn-sm">
-      <!-- TODO: replace href with macOS .dmg release URL -->
+    return `<a href=${DMG_URL} class="btn btn-primary btn-sm">
       ${MAC_SVG} Download for macOS
     </a>`;
   }
   if (os === 'windows') {
-    return `<a href="#" class="btn btn-primary btn-sm">
-      <!-- TODO: replace href with Windows .exe release URL -->
+    return `<a href=${EXE_URL} class="btn btn-primary btn-sm">
       ${WIN_SVG} Download for Windows
     </a>`;
   }
@@ -39,38 +40,32 @@ function buildNavButton(os) {
 function buildHeroButtons(os) {
   if (os === 'mac') {
     return `<div class="download-group download-group--centered">
-      <a href="#" class="btn btn-primary">
-        <!-- TODO: replace href with macOS .dmg release URL -->
+      <a href=${DMG_URL} class="btn btn-primary">
         ${MAC_SVG} Download for macOS
       </a>
       <span class="os-req">macOS 12+</span>
-      <a href="#" class="alt-os-link">
-        <!-- TODO: replace href with Windows .exe release URL -->
+      <a href=${EXE_URL} class="alt-os-link">
         Windows version also available →
       </a>
     </div>`;
   }
   if (os === 'windows') {
     return `<div class="download-group download-group--centered">
-      <a href="#" class="btn btn-primary">
-        <!-- TODO: replace href with Windows .exe release URL -->
+      <a href=${EXE_URL} class="btn btn-primary">
         ${WIN_SVG} Download for Windows
       </a>
       <span class="os-req">Windows 10+</span>
-      <a href="#" class="alt-os-link">
-        <!-- TODO: replace href with macOS .dmg release URL -->
+      <a href=${DMG_URL} class="alt-os-link">
         macOS version also available →
       </a>
     </div>`;
   }
   // Unknown — show both stacked
   return `<div class="download-group download-group--centered download-group--stack">
-    <a href="#" class="btn btn-primary">
-      <!-- TODO: replace href with macOS .dmg release URL -->
+    <a href=${DMG_URL} class="btn btn-primary">
       ${MAC_SVG} Download for macOS
     </a>
-    <a href="#" class="btn btn-primary btn-secondary">
-      <!-- TODO: replace href with Windows .exe release URL -->
+    <a href=${EXE_URL} class="btn btn-primary btn-secondary">
       ${WIN_SVG} Download for Windows
     </a>
   </div>`;
@@ -79,38 +74,32 @@ function buildHeroButtons(os) {
 function buildCtaButtons(os) {
   if (os === 'mac') {
     return `<div class="download-group download-group--centered">
-      <a href="#" class="btn btn-primary btn-large">
-        <!-- TODO: replace href with macOS .dmg release URL -->
+      <a href=${DMG_URL} class="btn btn-primary btn-large">
         ${MAC_SVG} Download for macOS
       </a>
       <span class="os-req">macOS 12+</span>
-      <a href="#" class="alt-os-link">
-        <!-- TODO: replace href with Windows .exe release URL -->
+      <a href=${EXE_URL} class="alt-os-link">
         Windows version also available →
       </a>
     </div>`;
   }
   if (os === 'windows') {
     return `<div class="download-group download-group--centered">
-      <a href="#" class="btn btn-primary btn-large">
-        <!-- TODO: replace href with Windows .exe release URL -->
+      <a href=${EXE_URL} class="btn btn-primary btn-large">
         ${WIN_SVG} Download for Windows
       </a>
       <span class="os-req">Windows 10+</span>
-      <a href="#" class="alt-os-link">
-        <!-- TODO: replace href with macOS .dmg release URL -->
+      <a href=${DMG_URL} class="alt-os-link">
         macOS version also available →
       </a>
     </div>`;
   }
   // Unknown — show both stacked
   return `<div class="download-group download-group--centered download-group--stack">
-    <a href="#" class="btn btn-primary btn-large">
-      <!-- TODO: replace href with macOS .dmg release URL -->
+    <a href=${DMG_URL} class="btn btn-primary btn-large">
       ${MAC_SVG} Download for macOS
     </a>
-    <a href="#" class="btn btn-primary btn-secondary btn-large">
-      <!-- TODO: replace href with Windows .exe release URL -->
+    <a href=${EXE_URL} class="btn btn-primary btn-secondary btn-large">
       ${WIN_SVG} Download for Windows
     </a>
   </div>`;
