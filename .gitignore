@@ -1,0 +1,5 @@
+# .gitignore
+dump.rdb
+*.rdb
+erl_crash.dump
+.claude/

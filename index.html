@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevRecallr — Your Dev Life, Organized</title>
+  <meta name="description" content="DevRecallr tracks your projects, active services, GitHub activity, and more — all in one glanceable dashboard built for your local machine." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner container">
+      <a href="#" class="nav-logo">
+        <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="32" height="32" rx="8" fill="#7c6fff"/>
+          <path d="M8 11l6 5-6 5M17 21h7" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="logo-text">DevRecallr</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#screenshots">Screenshots</a></li>
+        <li><a href="#download">Download</a></li>
+      </ul>
+      <div class="nav-cta" id="nav-download">
+        <!-- OS-detected download button injected by main.js -->
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-content fade-in">
+        <h1 class="hero-headline">Your codebase has docs.<br>Your dev life should too.</h1>
+        <p class="hero-subhead">DevRecallr tracks your projects, active services, GitHub activity, and more — all in one glanceable dashboard built for your local machine.</p>
+        <div class="hero-cta" id="hero-download">
+          <!-- OS-detected download button injected by main.js -->
+        </div>
+      </div>
+      <div class="hero-screenshot fade-in">
+        <img
+          src="assets/mainScreen.png"
+          alt="DevRecallr main dashboard showing project list, active services, and GitHub activity"
+          class="screenshot-img screenshot-hero"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="problem section fade-in" id="problem">
+    <div class="container">
+      <div class="problem-inner">
+        <p class="problem-text">
+          You have six terminals open, three projects running, and no idea which port belongs to which app. You've rewritten that API snippet twice this week because you forgot where you saved it. And context-switching between your task manager, notes, and browser tabs burns thirty minutes before you've written a line of code.
+        </p>
+        <p class="problem-text problem-text--highlight">
+          DevRecallr was built to fix that — a local-first developer dashboard that keeps everything in one glanceable window, so you can get back to building.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features section" id="features">
+    <div class="container">
+      <p class="section-label fade-in">Features</p>
+      <div class="features-grid">
+
+        <div class="feature-card fade-in">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+            </svg>
+          </div>
+          <h3 class="feature-name">Project Tracking</h3>
+          <p class="feature-desc">Keep every project's status, stack, and notes in one place.</p>
+        </div>
+
+        <div class="feature-card fade-in">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="6" y1="3" x2="6" y2="15"/>
+              <circle cx="18" cy="6" r="3"/>
+              <circle cx="6" cy="18" r="3"/>
+              <path d="M18 9a9 9 0 0 1-9 9"/>
+            </svg>
+          </div>
+          <h3 class="feature-name">GitHub Integration</h3>
+          <p class="feature-desc">See recent commits and repo activity without leaving the app.</p>
+        </div>
+
+        <div class="feature-card fade-in">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+              <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+              <line x1="6" y1="6" x2="6.01" y2="6"/>
+              <line x1="6" y1="18" x2="6.01" y2="18"/>
+            </svg>
+          </div>
+          <h3 class="feature-name">Active Services</h3>
+          <p class="feature-desc">Auto-detect running ports and local services at a glance.</p>
+        </div>
+
+        <div class="feature-card fade-in">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="7"/>
+              <rect x="14" y="3" width="7" height="7"/>
+              <rect x="14" y="14" width="7" height="7"/>
+              <rect x="3" y="14" width="7" height="7"/>
+            </svg>
+          </div>
+          <h3 class="feature-name">All-in-One Dashboard</h3>
+          <p class="feature-desc">Projects, services, notes, and keys — one screen, zero tabs.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREENSHOTS -->
+  <section class="screenshots section" id="screenshots">
+    <div class="container">
+      <p class="section-label fade-in">Screenshots</p>
+      <div class="screenshots-grid">
+        <figure class="screenshot-figure fade-in">
+          <img
+            src="assets/welcomeDialog.png"
+            alt="DevRecallr welcome and onboarding dialog"
+            class="screenshot-img"
+          />
+          <figcaption>Welcome setup — get started in seconds</figcaption>
+        </figure>
+        <figure class="screenshot-figure fade-in">
+          <img
+            src="assets/projectScreen.png"
+            alt="DevRecallr project details view"
+            class="screenshot-img"
+          />
+          <figcaption>Project details — status, stack, and notes for every project</figcaption>
+        </figure>
+        <figure class="screenshot-figure fade-in">
+          <img
+            src="assets/servicesScreen.png"
+            alt="DevRecallr active services view"
+            class="screenshot-img"
+          />
+          <figcaption>Active services — running ports detected automatically</figcaption>
+        </figure>
+        <figure class="screenshot-figure fade-in">
+          <img
+            src="assets/mainScreen.png"
+            alt="DevRecallr main dashboard"
+            class="screenshot-img"
+          />
+          <figcaption>Main dashboard — all your projects and services at a glance</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD CTA -->
+  <section class="download-cta section" id="download">
+    <div class="container">
+      <div class="download-cta-inner fade-in">
+        <h2 class="download-headline">Stop context switching.<br>Start shipping.</h2>
+        <p class="download-subhead">Free download. No account required. Runs entirely on your machine.</p>
+        <div id="cta-download">
+          <!-- OS-detected download button injected by main.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#" class="nav-logo">
+        <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="32" height="32" rx="8" fill="#7c6fff"/>
+          <path d="M8 11l6 5-6 5M17 21h7" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="logo-text">DevRecallr</span>
+      </a>
+      <p class="footer-copy">&copy; 2026 Brian Manderino. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
